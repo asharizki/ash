@@ -175,7 +175,7 @@ echo color("nevy","| 2. Daftar \n");
 echo color("nevy","| 3. Cek Lokasi / Kode TOKO / Kode REFF\n");
 echo color("nevy","| 4. Rubah password + Nama Default \n");
 echo color("red","| 5. ALL IN ONE (IDM POINT+KLIK) (PERBAIKAN) \n");
-echo color("nevy","| 6. Indomaret pointku (SMS OTP) \n");
+echo color("nevy","| 6. Login Indomaret pointku (SMS OTP) \n");
 echo color("nevy","| Pilih salah satu :  ");
 $input_hp = fopen("php://stdin","r");
 $inputan = trim(fgets($input_hp));
