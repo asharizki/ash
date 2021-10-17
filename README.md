@@ -1,9 +1,8 @@
-NUYUL 
-Bot klik Indomaret by Team @ash.rizki
-
-FOR TERMUX/UBUNTU/SSH USER
-apt update
-apt install wget php curl git -y
-git clone https://github.com/asharizki/ash
-cd ash
-php run.php
+<br>NUYUL Bot klik Indomaret by Team @ash.rizki
+<br>
+<br>FOR TERMUX/UBUNTU/SSH USER
+<br>apt update
+<br>apt install wget php curl git -y
+<br>git clone https://github.com/asharizki/ash
+<br>cd ash
+<br>php run.php
