@@ -166,6 +166,7 @@ echo "\n";
 echo "\n";
 echo color("blue","| SCRIPT VIP KLIK INDOMARET & IDM POINKU \n");
 echo color("red","| ------------ASHA RIZKI------------ \n");
+echo color("blue","| ------------NEW VESRION------------ \n");
 echo color("yellow","| WA 081346444450 | DONATE DANA - 081346444450 \n");
 echo color("yellow","| @ash.rizki \n");
 echo color("green","| Time    :".date('[d-m-Y] [H:i:s]')."\n");
