@@ -1,6 +1,6 @@
 <?php
 error_reporting(E_ALL ^ E_DEPRECATED);
-date_default_timezone_set('Asia/Jakarta');
+date_default_timezone_set('Asia/Pontianak');
 function sate_ayam($url, $head_cart, $post_cart){
 
     $idhp = md5(uniqid());
@@ -752,7 +752,7 @@ elseif($inputan == "5"){
                     echo color("yellow", "| Masukan KODE TOKO: ");
                     $input_hp = fopen("php://stdin","r");
                     $KODE_TOKO = trim(fgets($input_hp));
-                     #$KODE_TOKO = "T0PO";
+                     #$KODE_TOKO = "TMUW";
                 
                 
                     //Cek stok & ambil cookie
@@ -1038,7 +1038,7 @@ if ($pilih == "1"){
 $headers = [
         'Authorization: Bearer '.$token,
         'Content-Type: application/json' ];
-$data_fcm = '{"userId":'.$useraid.',"deviceType":"01","deviceId":'.$idhp.',"fcmToken":"eth5TTJ5TsSbruZrMhhJPz:APA91bHeS2YrDnbC6knb7QbZQCSFzwvKnFExEBawlHVIzFuGC70aHMdqDkX-VYNtYRsSWct6kxI8wbhVWG5xjhgWUoNgWC50Vte6-bg8ZkUIN-392wTkV0wnT5I8_exlchvF5Or-dB2D"}';
+$data_fcm = '{"userId":'.$useraid.',"deviceType":"01","deviceId":'.$idhp.',"fcmToken":"eth5TTJ5TsSbruZrMhhJPz:APA91bHeS2YrDnbC6kxb7QbZQCSFzwvKxFExEBawlHVIzFuGC70aHMdqDkX-VYNtYRsSWct6kxI8wbbVWG5xjhgWUoNgWC50Vte6-bg8ZkUIN-392wTkV0wnT5I8_exlchvF5Or-dB2D"}';
 $fcmcek = sate_ayam('https://edtsapp.indomaretpoinku.com/notification/api/push-notifications/fcm-registration',$headers,$data_fcm);
 if ($fcmcek !== false){
     $fcm = json_decode($fcmcek,true);
@@ -1047,7 +1047,7 @@ if ($fcmcek !== false){
 }
 //CEK PIN
 pin_asu:
-//$token ='eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI2OFMwalUzbGdFaU1zbzFWRDgzRHhhdEk3blkxLU9WR1dQSVI4d0F2MVgwIn0.eyJleHAiOjE2NjUwNTgwMjQsImlhdCI6MTYzMzUyMjAyNCwianRpIjoiY2VmMDBjNDUtODBjMi00M2I2LTlkNGUtODc4OTkzZTJhOWVlIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLmtleWNsb2FrLWhhL2F1dGgvcmVhbG1zL2lkbS1hcHAiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZTYxM2JkYjQtYTQyYi00ZjNmLWJjZjctMjM2OTc4NmRlMjdhIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiaWRtLWJvIiwic2Vzc2lvbl9zdGF0ZSI6Ijg0OTk5ZWJhLTgyZjUtNGMwYi05OWYzLTE3MDlhZTAwY2U5NyIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1pZG0tYXBwIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSBtb2JpbGUiLCJzaWQiOiI4NDk5OWViYS04MmY1LTRjMGItOTlmMy0xNzA5YWUwMGNlOTciLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImlkIjo5NDIwOTE4LCJwcmVmZXJyZWRfdXNlcm5hbWUiOiIwODU3ODI5NDY5Njg6OjFkMjZlMWY1YmQ4NzBlNjNmZTBjNGE2OTU5ZWJlMjM3In0.UoRi5fypG-DpfeoL_dbMMNnoDEZMcLjoC7ShbyQ3S0hBrDVviW8LGSiOymqqq5ce45cCU7qJWrpy1vomR7OrA4zTLC5A-GaXwkMV2PsNaeP5CV4mQtWqFyZqVFSOvyDZRCDgrmuzAdwRd5BtUVCRdWBfaCoLrAOAWJLkOlw2QayrGCzvM9Sby8brw199smo8IjhZAWzGzjtui3WiG2dbdWqsX-confv3uRsfXyZu0h-bVmvZRtN5Tr81ZY37JZQzkKbGOlG90pHJOHLYIad9gBg_WC2Ue6xEKE3qo0UR5H_8wspEn69dPDquEh_fMByEXUQ34dpHWFhE0PYdyPH5WQ';
+//$token ='eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI2OFMwalUzbGdFaU1zbzFWRDgzRHhhdEk3blkxLU9WR1dQSVI4d0F2MVgwIn0.eyJleHAiOjE2NhUwNTgwMjQsImlhdCI6MTYzMzUyMjAyNCwibuRpIjoiY2VmMDBjNDUtODBjMi00M2I2LTlkNGUtODc4OTkzZTJhOWVlIiwiaXNzIjoiaHR0cDovL2tleWNsb2FrLmtleWNsb2FrLWhhL2F1dGgvcmVhbG1zL2lkbS1hcHAiLCJhdWQiOiJhY2NvdW50Iiwic3ViIjoiZTYxM2JkYjQtYTQyYi00ZjNmLWJjZjctMjM2OTc4NmRlMjdhIiwidHlwIjoiQmVhcmVyIiwiYXpwIjoiaWRtLWJvIiwic2Vzc2lvbl9zdGF0ZSI6Ijg0OTk5ZWJhLTgyZjUtNGMwYi05OWYzLTE3MDlhZTAwY2U5NyIsImFjciI6IjEiLCJyZWFsbV9hY2Nlc3MiOnsicm9sZXMiOlsiZGVmYXVsdC1yb2xlcy1pZG0tYXBwIiwib2ZmbGluZV9hY2Nlc3MiLCJ1bWFfYXV0aG9yaXphdGlvbiJdfSwicmVzb3VyY2VfYWNjZXNzIjp7ImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiZW1haWwgcHJvZmlsZSBtb2JpbGUiLCJzaWQiOiI4NDk5OWViYS04MmY1LTRjMGItOTlmMy0xNzA5YWUwMGNlOTciLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImlkIjo5NDIwOTE4LCJwcmVmZXJyZWRfdXNlcm5hbWUiOiIwODU3ODI5NDY5Njg6OjFkMjZlMWY1YmQ4NzBlNjNmZTBjNGE2OTU5ZWJlMjM3In0.UoRi5fypG-DpfeoL_dbMMNnoDEZMcLjoC7ShbyQ3S0hBrDVviW8LGSiOymqqq5ce45cCU7qJWrpy1vomR7OrA4zTLC5A-GaXwkMV2PsNaeP5CV4mQtWqFyZqVFSOvyDZRCDgrmuzAdwRd5BtUVCRdWBfaCoLrAOAWJLkOlw2QayrGCzvM9Sby8brw199smo8IjhZAWzGzjtui3WiG2dbdWqsX-confv3uRsfXyZu0h-bVmvZRtN5Tr81ZY37JZQzkKbGOlG90pHJOHLYIad9gBg_WC2Ue6xEKE3qo0UR5H_8wspEn69dPDquEh_fMByEXUQ34dpHWFhE0PYdyPH5WQ';
 $header_token = [
     'Authorization: Bearer '.$token,
     'Content-Type: application/json',
@@ -1085,7 +1085,7 @@ if ($cekpin['data'] !== true){
         echo "| Berhasil! \n";}else{goto validate_pin;} 
         $kode_pin = "\"$kode_pin\"";
     // $data_pin_valid = '{"phoneNumber":'.$phone.',"deviceId":'.$idhp.',"pinCode":'.$kode_pin.'}';
-    // $data_pin_valid ='{"phoneNumber":"081388814446","deviceId":"1d26e1f5bd870e63fe0c4a6959ebe237","pinCode":"123456"}';
+    // $data_pin_valid ='{"phoneNumber":"081388814446","deviceId":"1d26e1f5bd8709mkhe0c4a6959ebe237","pinCode":"123456"}';
     // print_r($token);
     $valid_pin = json_decode(sate_ayam1($token,$phone,$idhp,$kode_pin),true);
         if ($valid_pin['status'] !== "00"){
